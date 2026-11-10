@@ -1,0 +1,32 @@
+{
+  "name": "glance",
+  "private": true,
+  "version": "0.5.2",
+  "type": "module",
+  "scripts": {
+    "assets": "node scripts/copy-pdfjs-assets.mjs",
+    "dev": "npm run assets && vite",
+    "build": "npm run assets && tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@aiden0z/pptx-renderer": "^1.3.0",
+    "@tauri-apps/api": "^2.12.0",
+    "@tauri-apps/plugin-dialog": "^2.8.0",
+    "@tauri-apps/plugin-opener": "^2.6.0",
+    "docx-preview": "^0.4.1",
+    "dompurify": "^3.4.16",
+    "exceljs": "^4.4.0",
+    "jszip": "^3.10.2",
+    "marked": "^18.1.0",
+    "pdfjs-dist": "^6.3.289",
+    "ssf": "^0.11.2"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.12.0",
+    "@types/node": "^26.6.3",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.1"
+  }
+}

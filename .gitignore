@@ -1,0 +1,29 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+public/pdfjs
+src-tauri/target
+src-tauri/gen
+release/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+
+# Editors / OS
+.vscode/
+.idea/
+.claude/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
